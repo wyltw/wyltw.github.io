@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border: 2px solid grey;
+  padding: 20px;
+  max-width: 60rem;
+  height: auto;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.subscribe-form {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-rows: 11fr;
+  grid-column: 1/3;
+  gap: 30px;
+  height: auto;
+  padding: 100px 40px;
+}
+
+.signup-illustration {
+  grid-column: 5/7;
+  max-width: 100%;
+  height: auto;
+}
+
+.mobile-signup-illustration {
+  display: none;
+}
+
+.title {
+  font-size: 32pt;
+  font-family: Roboto-Bold;
+  grid-row: 1;
+}
+
+p,
+ul {
+  font-family: Roboto-Regular;
+}
+
+.benefit-list {
+  list-style: none;
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.icon-success {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px 0 0;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 2px solid lightgray;
+  margin-top: 10px;
+}
+
+.subscribe-btn {
+  font-family: Roboto-Regular;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(26, 27, 44);
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 0 0;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-bottom: 40px;
+  }
+
+  .signup-illustration {
+    display: none;
+  }
+
+  .mobile-signup-illustration {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
